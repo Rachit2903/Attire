@@ -40,8 +40,9 @@ $('.filter-button-group').on( 'click', 'a', function() {
     })
   }
 
-
-
+  $("#offcanvasNavbar a").click(function(){
+    $('.offcanvas').offcanvas('hide');
+});
 
 
 

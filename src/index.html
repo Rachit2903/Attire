@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTIRE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
+</head>
+
+<body>
+
+    <!-- start of navbar -->
+    <nav class="navbar pb-4">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <img src="../images/shopping-bag-icon.png" alt="site-icon">
+                <span class="text-uppercase fw-lighter ms-2">Attire</span>
+            </a>
+            <form class=" my-3 w-50 d-none d-sm-block position-relative border " role="search ">
+                <input class="form-control me-2 search-form" type="search" placeholder="Search" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass position-absolute search-icon color-common "></i>
+            </form>
+            <a class="navbar-toggler me-4 bg-common" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="" aria-label="Toggle navigation">
+                <span class="rounded profile"><i class="fa-regular fa-user"></i></span>
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PROFILE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body sidebar-menu">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                COLLECTION
+                            </a>
+                            <ul class="dropdown-menu filter-button-group">
+                                <li><a class="dropdown-item" href="#men-collection" data-filter=".men">MEN'S
+                                        Collection</a></li>
+                                <li><a class="dropdown-item " href="#women-collection" data-filter=".women">WOMEN'S
+                                        Collection</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item " href="#kid-collection" data-filter=".kid">CHILDREN
+                                        SECTION</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#footwear" data-filter=".foot">FOOTWEAR</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#electronics" data-filter=".elec">ELECTRONICS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#special">SPECIALS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blogs">BLOGS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT US</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popular">POPULAR</a>
+                        </li>
+                    </ul>
+                    <div class=" pt-3">
+                        <button class="btn bg-common me-2 text-white">Login In</button>
+                        <button class="btn bg-common text-white">Sign Up</button>
+                    </div>
+                    <form class="d-flex mt-3 d-xs-block d-sm-block d-md-none" role="search ">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- start of items section -->
+    <section id="items">
+        <div class="d-flex justify-content-around h-100">
+            <div class="d-flex flex-column justify-content-between align-items-center items-card d-none d-sm-flex">
+                <img src="../images/items img/fashion.jpg" alt="" class="w-50 h-50">
+                <a href="#">Fashion</a>
+            </div>
+            <div class="d-flex flex-column  justify-content-between align-items-center items-card ">
+                <img src="../images/items img/grocery.jpg" alt="" class="w-50 h-50">
+                <a href="#">Grocery</a>
+            </div>
+            <div class="d-flex flex-column  justify-content-between align-items-center items-card d-none d-sm-flex">
+                <img src="../images/items img/footwear.jpg" alt="" class="w-50 h-50 ">
+                <a href="#">Footwear</a>
+            </div>
+            <div class="d-flex flex-column  justify-content-between align-items-center items-card">
+                <img src="../images/items img/electronics.jpg" alt="" class="w-50 h-50">
+                <a href="#">Electronics</a>
+            </div>
+            <div class="d-flex flex-column  justify-content-between align-items-center items-card d-none d-sm-flex">
+                <img src="../images/items img/decor.jpg" alt="" class="w-50 h-50">
+                <a href="#">Decor</a>
+            </div>
+            <div class="d-flex flex-column  justify-content-between align-items-center items-card">
+                <img src="../images/items img/accessories.jpg" alt="" class="w-50 h-50">
+                <a href="#">Accessories</a>
+            </div>
+            <div class="d-flex flex-column  justify-content-between align-items-center items-card ">
+                <img src="../images/items img/cosmetics.jpg" alt="" class="w-50 h-50">
+                <a href="#">Cosmetics</a>
+            </div>
+        </div>
+    </section>
+    <!-- end of items section -->
+
+    <!-- start of slider section -->
+    <section id="slider">
+        <div id="carouselExampleIndicators" class="carousel slide h-100">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active bg-primary h-100 ">
+                    <div
+                        class="h-100 position-relative d-flex justify-content-around align-items-center slider-container">
+                        <div class=" slider-content position-relative">
+                            <ul>
+                                <li>Good ergonomics</li>
+                                <li>Speedy overall performance</li>
+                                <li>Vivid 120Hz display</li>
+                                <li>Competent ultra-wide camera</li>
+                            </ul>
+                            <button class="btn position-absolute" type="button">Buy Now</button>
+                        </div>
+
+                        <img src="../images/slider images/phone.png" alt="" class="slider-img-1 ">
+                    </div>
+                </div>
+                <div class="carousel-item bg-primary h-100 ">
+                    <div
+                        class="h-100 position-relative d-flex justify-content-around align-items-center slider-container">
+                        <div class=" slider-content position-relative">
+                            <ul>
+                                <li>Graphics Intel HD Graphics 620</li>
+                                <li>Processor Core i5</li>
+                                <li>RAM 8GB</li>
+                                <li>SSD 256GB</li>
+                            </ul>
+                            <button class="btn header-btn text-white position-absolute">Buy Now</button>
+                        </div>
+                        <img src="../images/slider images/laptop.png" alt="" class="slider-img-2 ">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- end of slider section -->
+
+    <!-- start of collection section -->
+    <section id="collection" class="py-5">
+        <div class="container collection-container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+
+            <div class="row-g-0 mb-10">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark header-btn  active-filter-btn" data-filter=".men"
+                        id="men-collection">Men's Collection</button>
+                    <button type="button" class="btn m-2 text-dark header-btn" data-filter=".women"
+                        id="women-collection">Women's Collection</button>
+                    <button type="button" class="btn m-2 text-dark header-btn" data-filter=".kid"
+                        id="kid-collection">Kids Section</button>
+                    <button type="button" class="btn m-2 text-dark header-btn" data-filter=".foot"
+                        id="footwear">Footwear</button>
+                    <button type="button" class="btn m-2 text-dark header-btn" data-filter=".elec"
+                        id="electronics">Electronics</button>
+                </div>
+                <div class="collection-list mt-4 row">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 women">
+                        <div class="collection-img position-relative">
+                            <img src="../images/c_formal_gray_shirt.png" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Top</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 women">
+                        <div class="collection-img position-relative">
+                            <img src="../images/c_pant_girl.png" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lower</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 men">
+                        <div class="collection-img position-relative">
+                            <img src="../images/best_selling_1.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Formals</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 men">
+                        <div class="collection-img position-relative">
+                            <img src="../images/best_selling_2.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Jacket</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 men">
+                        <div class="collection-img position-relative">
+                            <img src="../images/best_selling_3.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">T-shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 women">
+                        <div class="collection-img position-relative">
+                            <img src="../images/c_tunic-shirt_girl.png" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Black Shirt</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 men">
+                        <div class="collection-img position-relative">
+                            <img src="../images/best-selling-4.webp" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Trouser</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 women">
+                        <div class="collection-img position-relative">
+                            <img src="../images/c_western-shirt.png" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Top</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 kid">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/scooter kid.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Scooty</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Top</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 kid">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/beach ball.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Beach Ball</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 kid">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/panda.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Panda</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 kid">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/car.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Car</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 elec">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/phone.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Phone</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 elec">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/laptop.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Laptop</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 elec">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/earphone.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Earphones</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 elec">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/headphones.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Headphones</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 foot">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/sports shoes.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Sports Shoes</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 foot">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/men's sandal.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Men's Sandal</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 foot">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/sandals.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Women's Sandal</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 gx-0 gy-3 foot">
+                        <div class="collection-img position-relative">
+                            <img src="../images/collection img/belly.jpg" alt="shirt" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Belly</p>
+                            <span class="fw-bold">$ 45.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection section -->
+
+    <!-- start of special products -->
+    <section id="special" class="py-5 ">
+        <div class="container collection-container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="../images/special_product_1.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Gray shirt</p>
+                        <span class="fw-bold d-block">$45.50</span>
+                        <a href="#" class="btn btn-primary mt-3 header-btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="../images/special_product_2.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Gray shirt</p>
+                        <span class="fw-bold d-block">$45.50</span>
+                        <a href="#" class="btn btn-primary mt-3 header-btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="../images/special_product_3.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Gray shirt</p>
+                        <span class="fw-bold d-block">$45.50</span>
+                        <a href="#" class="btn btn-primary mt-3 header-btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="../images/special_product_4.jpg" alt="" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Gray shirt</p>
+                        <span class="fw-bold d-block">$45.50</span>
+                        <a href="#" class="btn btn-primary mt-3 header-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    <!-- start of offer section -->
+    <section id="offers" class="py-5">
+        <div class="container collection-container">
+            <div
+                class="row d-flex align-items-center text-center justify-content-center justify-content-lg-start text-lg-start">
+                <div class="offer-content">
+                    <span class="text-white">Discount Up to 40%</span>
+                    <h2 class=" mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+                    <a href="#" class=" btn header-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of offer section -->
+
+    <!-- start of blogs -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="../images/blog_1.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Explore the Hottest Fashion Trends for the Season</h4>
+                        <p class="card-text mt-3 text-muted">
+                            In the ever-evolving world of fashion, staying up-to-date with the latest trends is essential. Look no further than our e-commerce clothing website, your ultimate destination for all things fashionable. In this blog post, we'll uncover the hottest fashion trends of the season, ensuring that you stay stylish and ahead of the curve. From runway-inspired looks to wardrobe must-haves, our carefully curated collection caters to your unique sense of style. Get ready to explore the cutting-edge trends that will elevate your fashion game to new heights.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"><span class="fw-bold">Author: </span> Olivia Fashionista </small>
+                        </p>
+                        <a href="" class="btn header-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="../images/blog_2.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Elevate Your Style While Embracing Sustainability</h4>
+                        <p class="card-text mt-3 text-muted">
+                            Sustainable fashion is not just a passing trend; it's a conscious choice towards a better future. At our e-commerce clothing website, we believe in the power of sustainable fashion. In this blog post, we'll delve into the importance of making eco-friendly wardrobe choices and showcase our collection of ethically produced and environmentally friendly clothing. Discover how you can make a positive impact without compromising on style. Join us in embracing sustainability and elevate your style game to a whole new level.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"><span class="fw-bold">Author: </span> Ethan EcoStyle</small>
+                        </p>
+                        <a href="" class="btn header-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="../images/blog_3.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Complete Your Look with Statement Accessories</h4>
+                        <p class="card-text mt-3 text-muted">
+                            Accessories have the incredible ability to transform any outfit from ordinary to extraordinary. If you're looking to elevate your style game, paying attention to the right accessories is key. In this blog post, we'll guide you through the world of statement accessories, showcasing how they can effortlessly enhance your outfits. From eye-catching jewelry to trendy handbags, our e-commerce clothing website offers a wide range of accessories to suit your personal style.Make a lasting impression wherever you go.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"><span class="fw-bold">Author: </span> Sophia Styles</small>
+                        </p>
+                        <a href="" class="btn header-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- start of about us -->
+    <section id="about" class="py-5">
+        <div class="container collection-container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class="lead text-muted">Discover Your Style Essence at Attire</p>
+                    <p>Welcome to Attire, your ultimate fashion destination. We believe that fashion is more than just clothing—it's a reflection of your individuality and style. With our carefully curated collection of high-quality garments and accessories, we strive to provide you with an exceptional shopping experience. From trendy dresses to versatile tops and everything in between, our selection caters to a variety of tastes and occasions. Enjoy seamless browsing, excellent customer service, and stay connected with us through our newsletter and social media channels. Explore Attire today and uncover the essence of your personal style.</p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="../images/about_us.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+      <!-- start of popular -->
+      <section id="popular" class="py-5">
+        <div class="container collection-container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block">Popular of This Year</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Top Rated</h3>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/top_rated_1.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/top_rated_2.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/top_rated_3.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best Seller</h3>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/best_selling_1.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/best_selling_2.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/best_selling_3.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">On Sale</h3>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/on_sale_1.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/on_sale_2.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start">
+                        <img src="../images/on_sale_3.jpg" alt="" class="img-fluid w-25 pe-3">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+
+    <!--start of newsletter -->
+    <section id="newsletter" class="py-5">
+        <div class="container collection-container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <p>Subscribe to our newsletter and stay in the fashion loop! By joining our mailing list, you'll gain exclusive access to the latest trends, style tips, and exciting promotions. Be the first to know about new arrivals, limited-time offers, and special discounts tailored just for you. Our newsletter is your fashion passport to stay ahead of the curve and elevate your wardrobe game. Don't miss out on this opportunity to be a part of our fashion community. Sign up today and let us inspire your style journey!</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Enter your Email ... ">
+                    <button class="btn header-btn bg-common" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of newsletter -->
+    
+      <!-- start of footer -->
+      <footer class="bg-dark py-5">
+        <div class="container collection-container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="index.html" class="text-uppercase text-decoration-none brand text-white">attire</a>
+                    <p class="text-white-50 mt-3">Your ultimate fashion destination for high-quality clothing and accessories. Explore, express, and elevate your style with us.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="index.html" class="text-white-50 text-decoration-none"><i
+                                    class="fa-solid fa-chevron-right me-1"></i>Home</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#collection" class="text-white-50 text-decoration-none"><i
+                                    class="fa-solid fa-chevron-right me-1"></i>Collections</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#blogs" class="text-white-50 text-decoration-none"><i
+                                    class="fa-solid fa-chevron-right me-1"></i>Blogs</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#about" class="text-white-50 text-decoration-none"><i
+                                    class="fa-solid fa-chevron-right me-1"></i>About Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white-50">
+                        <span class="me-3">
+                            <i class="fa-solid fa-map-marked-alt"></i>
+                        </span>
+                        <span>XYZ,ABC,New Delhi,India,110012</span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white-50">
+                        <span class="me-3">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <span>attiresupport@gmail.com</span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white-50">
+                        <span class="me-3">
+                            <i class="fa-solid fa-phone-alt"></i>
+                        </span>
+                        <span>891234XXXX</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white-50 text-decoration-none fs-4 me-4"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white-50 text-decoration-none fs-4 me-4"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white-50 text-decoration-none fs-4 me-4"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white-50 text-decoration-none fs-4 me-4"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+    <script src="https://kit.fontawesome.com/2c0576031c.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
